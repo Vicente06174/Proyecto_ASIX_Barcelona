@@ -1,7 +1,7 @@
 # Bitacora Personal - jonás
 
 ## [Fecha: 02/02/2026]
-**a. Objectiu del dia:\n**
+**a. Objectiu del dia:**
 ayudar en fase 1 y fase 2
 **b. Què he fet:**
 apoyar en defenicion de idea
