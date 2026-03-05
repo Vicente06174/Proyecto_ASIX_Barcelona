@@ -39,3 +39,32 @@
 
 **c. Què no he pogut aconseguir i per què:**
 * Configurar el mikrotik : debido a que estaba configurado del grupo anterior que uso ese mikrotik bloqueo el acceso por todos los puertos hacia el mikrotik
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## [Fecha: 04/03/2026]
+**a. Objectiu del dia:**
+* Crear mi usb con ventoy y todos los programas necesarios
+* Comenzar a instalar los sistemas operativos de nuestros equipos personales
+* Configurar mikrotik para tener conexion y DHCP con IPs asignadas estaticas por mac
+
+**b. Què he fet:**
+* He creado el usb con ventoy y los programas
+* He instalado Win 11 a 2 de los dispositivos
+* He configurado el microtick por lo basico para tener acceso a internet y tener una red 192.168.100.0/24 para poder usarla por ahora , inicio configuracion DHCP
+
+**c. Què no he pogut aconseguir i per què:**
+* Acabar de configurar el DHCP , debido a que no e conseguido que haga el reparto de IPs
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## [Fecha: 05/03/2026]
+**a. Objectiu del dia:**
+* Acabar de configurar DHCP
+* Configurar DNS Basica para comodidad
+* Instalar Proxmox en el SRV1
+
+**b. Què he fet:**
+* He acabado de configurar el DHCP
+* He acabado de configurar el DNS (PcGema,PcRenato,PcFatima,PcJonas y RTMKT) para comodidad
+* Instalacion Proxmox en SRV1 Completada con configuracion basica de red
