@@ -40,3 +40,13 @@ Configurar tarjetas para windows Srv DC, y organizar Ips para los servidores <br
 <br> <br>
 **d. Què no he pogut aconseguir i per què:** <br>
 <br> <br>
+
+## [Fecha: 16/05/2026]
+**a. Objectiu del dia:** <br>
+configurar red <br> <br>
+**b. Què he fet:** <br>
+pruebas con las VLANs <br> <br>
+**c. Què he aconseguit:** <br>
+<br> <br>
+**d. Què no he pogut aconseguir i per què:** <br>
+<br> <br>
