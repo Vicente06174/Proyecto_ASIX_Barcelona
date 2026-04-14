@@ -80,3 +80,16 @@
 
 **d. Què no he pogut aconseguir i per què:**
 *-.
+
+## [Fecha: 14/04/2026]
+**a. Objectiu del dia:** 
+* Hacer el esquema de red de la sede.
+
+**b. Què he fet:**
+* El esquema de red.
+
+**c. Què he aconseguit:**
+* Empezar y adelantar el esquema.
+
+**d. Què no he pogut aconseguir i per què:**
+*-.
