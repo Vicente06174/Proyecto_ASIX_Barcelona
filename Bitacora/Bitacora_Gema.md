@@ -66,3 +66,17 @@
 * Hemos conseguido entre Fátima, Renato y yo acabar la práctica.
 
 **d. Què no he pogut aconseguir i per què:**
+
+
+## [Fecha: 13/04/2026]
+**a. Objectiu del dia:** 
+* Continuar haciendo la Intranet.
+
+**b. Què he fet:**
+* Seguir trabajando con las páginas de tareas/incidencias.
+
+**c. Què he aconseguit:**
+* Hacer formularios para dar alta de una tarea o de una incidéncia.
+
+**d. Què no he pogut aconseguir i per què:**
+*-.
