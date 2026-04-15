@@ -27,9 +27,9 @@ Switch Distribución:
 
 
 RACK 1 (más arriba):
--1 Patch Panel
--1 switch Cisco
--1 MikroTik 
+- 1 Patch Panel
+- 1 switch Cisco
+- 1 Mikrotik
 
 
 RACK 2 (más abajo): 
