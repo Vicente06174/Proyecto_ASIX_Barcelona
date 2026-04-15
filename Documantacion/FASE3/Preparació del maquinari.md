@@ -50,15 +50,25 @@ El Controlador de Dominio requiere I/O aleatorio rápido debido a
 
 # Distribución RACK
 
-Campus: 
+**Campus:**
+
 Switch Distribucion: 
+
 -1 switch TP-Link configurable de 8 ports no enrackable
+
+
 RACK 1 (más arriba):
+
 -1 Patch Panel
+
 -1 switch Cisco
+
 -1 MikroTik 
+
+
 RACK 2 (más abajo): 
 -1 Patch Panel 
+
 -1 switch TP-Link
 
 -3 PC Dell “Srv”
@@ -67,40 +77,48 @@ RACK 2 (más abajo):
 
 ---
 
-· Edifici 1:
-1.- Switch Cisco de 24 (Distribuidor Edifici 1):
+**Edificio 1:**
+1.- Switch Cisco de 24 (Distribuidor Edificio 1):
+
 Puertos:
- Recepció: Port 1 (Configurat a VLAN 20)
-Gerència: Port 4 (Configurat a VLAN 10)
-Administració: Port 5 (Configurat a VLAN 10)
- SAT: Ports 8 i 9 (Configurats a VLAN 40)
-CPD: Ports 12-20 (Configurats a VLAN 100)
-Connexió amb distribuidor de campus: Port 24 (Mode Trunk)
+Recepción: Puerto 1 (Configurado a VLAN 20)
+Gerencia: Puerto 4 (Configurado a VLAN 10)
+Administración: Puerto 5 (Configurado a VLAN 10)
+SAT: Puertos 8 i 9 (Configurados a VLAN 40)
+CPD: Puertos 12-20 (Configurados a VLAN 100)
+Connexión con el distribuidor de campus: Puerto 24 (Mode Trunk)
+
 2.- Patch Panel
 Puertos:
 1-12 (planta 1)   13-24 (planta 0)
 
+---
 
-· Edifici 2
-1.- Switch TP-Link de 16/24 (Distribuidor Edifici 2):
+**Edificio 2**
+1.- Switch TP-Link de 16/24 (Distribuidor Edificio 2):
+
 Puertos: 
-Sala vigilància: Port 1 (Configurat a VLAN 50)
-Departament comercial: Port 3 (Configurat a VLAN 20)
-Producció: Port 6 (Configurat a VLAN 30)
+Sala vigilancia: Puerto 1 (Configurado a VLAN 50)
+Departamento comercial: Puerto 3 (Configurado a VLAN 20)
+Producció: Puerto 6 (Configurado a VLAN 30)
 Magatzem:
-Encarregat operacions: Port 9 (Configurat a VLAN 30)
-Administratiu: Port 10 (Configurat a VLAN 30)
-Connexió amb distribuidor de campus: Port 16 (Mode Trunk)
+ Encarregat operacions: Puerto 9 (Configurado a VLAN 30)
+ Administratiu: Puerto 10 (Configurado a VLAN 30)
+Connexión con el distribuidor de campus: Puerto 16 (Mode Trunk)
+
+
 2.- Patch Panel
 Puertos:
 Usaremos los mismos números que en el switch
 Switch TP-Link de 8 (Distribuidor de campus):
-Connexió amb distribuidor Edifici 1: Port 1 (Mode Trunk)
-Connexió amb distribuidor Edifici 2: Port 3 (Mode Trunk)
-Connexió amb Router Mikrotik: Port 8 (Mode Trunk)
+Connexión con el distribuidor Edificio 1: Port 1 (Mode Trunk)
+Connexión con el distribuidor Edificio 2: Port 3 (Mode Trunk)
+Connexión con Router Mikrotik: Puerto 8 (Mode Trunk)
  Router Mikrotik:
-SNAT (tràfic d'eixida): Port 1 (WAN)
-Troncal i tallafocs entre VLANs: Port 2 (LAN)
+SNAT (tràfic d'eixida): Puerto 1 (WAN)
+Troncal y cortafuegos entre VLANs: Puerto 2 (LAN)
+
+
 
 # Sistema de Alimentación Ininterrumpida (SAI)
 
