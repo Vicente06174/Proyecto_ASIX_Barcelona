@@ -29,25 +29,6 @@
 - Cables de red
 
 
-
-**Hardware Disponible:**  
-16 GB RAM | NVMe 256 GB | SSD 256 GB (LVM)
-
----
-
-## Tabla de Servidores
-
-
-## Explicación técnica del reparto de discos
-
-### NVMe
-El Controlador de Dominio requiere I/O aleatorio rápido debido a
-
-
-
-
-
-
 # Distribución RACK
 
 **Campus:**
