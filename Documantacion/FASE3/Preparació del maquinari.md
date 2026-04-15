@@ -28,19 +28,14 @@ Switch Distribución:
 
 RACK 1 (más arriba):
 -1 Patch Panel
-
 -1 switch Cisco
-
 -1 MikroTik 
 
 
 RACK 2 (más abajo): 
 -1 Patch Panel 
-
 -1 switch TP-Link
-
 -3 PC Dell “Srv”
-
 -1 SAI
 
 ---
