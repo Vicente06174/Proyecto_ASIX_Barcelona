@@ -1,5 +1,35 @@
 # Implantación básica del sistema
 
+**MATERIAL DISPONIBLE**
+
+- 2 patch panels 
+
+- 1 MikroTik que hace de servidor de comunicaciones con el exterior
+
+- 1 switch Cisco 1U configurable que es el switch del edificio 1
+
+- 1 switch TP-Link 1U configurable que es el switch del edificio 2
+
+- 1 switch TP-Link configurable de 8 puertos no enrackable que es el switch de campus
+
+- 1 switch 1U no configurable
+
+- 3 puntos de acceso sin hilos 
+
+- 3 PC Dell que harán de servidores de la sede 
+
+- 4 PC que hacen de clientes de la red  
+
+- 5 monitores,5 teclados y 5 ratones
+
+- 1 SAI
+
+- 9 Adaptadores (3 x ordenador)
+
+- Cables de red
+
+
+
 **Hardware Disponible:**  
 16 GB RAM | NVMe 256 GB | SSD 256 GB (LVM)
 
@@ -7,17 +37,6 @@
 
 ## Tabla de Servidores
 
-| CARACTERÍSTICAS | VM 1: Servidor Empresarial (PDC) | VM 2: Monitorización (Zabbix) |
-|-----------------|----------------------------------|-------------------------------|
-| **FUNCIONALIDAD** | Controlador de Dominio, WDS (Instalación por red) y WSUS (Actualizaciones). | Monitorización de equipos de la organización y dispositivos de red. |
-| **S.O.** | Windows Server (GUI). | GNU/Linux (Debian/Ubuntu). |
-| **NÚCLEOS** | 2 vCPUs | 1 vCPU |
-| **RAM** | 6 GB | 3 GB |
-| **DISCOS** | NVMe: 80 GB (C:\ Sistema y AD).<br>SSD (LVM): 120 GB (D:\ Repositorio WDS e ISOs). | NVMe: 40 GB (/ sistema y base de datos).<br>SSD (LVM): 0 GB. |
-| **TARJETAS DE RED** | Ethernet 2 | Ethernet 3 |
-| **OBSERVACIONES** | Crítico para el arranque del sistema; las ISOs se gestionan vía iSCSI. | Clasifica equipos por categorías (clientes, servidores, etc.). |
-
----
 
 ## Explicación técnica del reparto de discos
 
@@ -31,20 +50,64 @@ El Controlador de Dominio requiere I/O aleatorio rápido debido a
 
 # Distribución RACK
 
+Campus: 
+Switch Distribucion: 
+-1 switch TP-Link configurable de 8 ports no enrackable
+RACK 1 (más arriba):
+-1 Patch Panel
+-1 switch Cisco
+-1 MikroTik 
+RACK 2 (más abajo): 
+-1 Patch Panel 
+-1 switch TP-Link
+
+-3 PC Dell “Srv”
+
+-1 SAI
+
+---
+
+· Edifici 1:
+1.- Switch Cisco de 24 (Distribuidor Edifici 1):
+Puertos:
+ Recepció: Port 1 (Configurat a VLAN 20)
+Gerència: Port 4 (Configurat a VLAN 10)
+Administració: Port 5 (Configurat a VLAN 10)
+ SAT: Ports 8 i 9 (Configurats a VLAN 40)
+CPD: Ports 12-20 (Configurats a VLAN 100)
+Connexió amb distribuidor de campus: Port 24 (Mode Trunk)
+2.- Patch Panel
+Puertos:
+1-12 (planta 1)   13-24 (planta 0)
 
 
-
-
-
-
-
-
+· Edifici 2
+1.- Switch TP-Link de 16/24 (Distribuidor Edifici 2):
+Puertos: 
+Sala vigilància: Port 1 (Configurat a VLAN 50)
+Departament comercial: Port 3 (Configurat a VLAN 20)
+Producció: Port 6 (Configurat a VLAN 30)
+Magatzem:
+Encarregat operacions: Port 9 (Configurat a VLAN 30)
+Administratiu: Port 10 (Configurat a VLAN 30)
+Connexió amb distribuidor de campus: Port 16 (Mode Trunk)
+2.- Patch Panel
+Puertos:
+Usaremos los mismos números que en el switch
+Switch TP-Link de 8 (Distribuidor de campus):
+Connexió amb distribuidor Edifici 1: Port 1 (Mode Trunk)
+Connexió amb distribuidor Edifici 2: Port 3 (Mode Trunk)
+Connexió amb Router Mikrotik: Port 8 (Mode Trunk)
+ Router Mikrotik:
+SNAT (tràfic d'eixida): Port 1 (WAN)
+Troncal i tallafocs entre VLANs: Port 2 (LAN)
 
 # Sistema de Alimentación Ininterrumpida (SAI)
 
 Se ha implementado un sistema de alimentación basado en dos unidades del modelo Phasak OnLine PH 9230 3000VA, configuradas en paralelo junto con un sistema ATS para garantizar la continuidad del servicio.
 El SAI es de tipo Online (doble conversión), lo que proporciona suministro eléctrico continuo sin interrupciones.
-Configuración del SAI (conexión USB)
+
+**Configuración del SAI (conexión USB)**
 
 El sistema se ha configurado mediante conexión USB directa a un servidor de gestión.
 Se utiliza el software NUT (Network UPS Tools) para:
