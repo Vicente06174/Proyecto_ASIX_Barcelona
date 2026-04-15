@@ -33,17 +33,19 @@ RACK 1 (más arriba):
 
 
 RACK 2 (más abajo): 
--1 Patch Panel 
--1 switch TP-Link
--3 PC Dell “Srv”
--1 SAI
+- 1 Patch Panel
+- 1 switch TP-Link
+- 3 PC Dell “Srv”
+- 1 SAI
 
 ---
 
-**Edificio 1:**
-1.- Switch Cisco de 24 (Distribuidor Edificio 1):
+**Edificio 1:**  
 
-Puertos:
+1.- Switch Cisco de 24 (Distribuidor Edificio 1):  
+
+Puertos:  
+
 Recepción: Puerto 1 (Configurado a VLAN 20)  
 
 Gerencia: Puerto 4 (Configurado a VLAN 10)  
@@ -59,12 +61,14 @@ Connexión con el distribuidor de campus: Puerto 24 (Mode Trunk)
 
 2.- Patch Panel
 Puertos:
-1-12 (planta 1)   13-24 (planta 0)
+1-12 (planta 1)    
+13-24 (planta 0)
 
 ---
 
-**Edificio 2**
-1.- Switch TP-Link de 16/24 (Distribuidor Edificio 2):
+**Edificio 2**  
+
+1.- Switch TP-Link de 16/24 (Distribuidor Edificio 2):  
 
 Puertos: 
 Sala vigilancia: Puerto 1 (Configurado a VLAN 50)  
@@ -266,16 +270,20 @@ Con el objetivo de prevenir la pérdida de información y garantizar la continui
 - Uso de RAID
 - Monitorización del estado de discos
 
-Fallo de red (Mikrotik)
-Copia de seguridad de la configuración
-Sustitución rápida del equipo
-Monitorización de red
-Fallo eléctrico
-Uso de SAI Online redundante
-Apagado controlado de sistemas según prioridad
-Fallo de equipos cliente
-Sustitución rápida
-Configuración centralizada
+**Fallo de red (Mikrotik)**
+- Copia de seguridad de la configuración
+- Sustitución rápida del equipo
+- Monitorización de red
+
+  
+**Fallo eléctrico**
+- Uso de SAI Online redundante
+- Apagado controlado de sistemas según prioridad
+
+**Fallo de equipos cliente**
+- Sustitución rápida
+- Configuración centralizada
+
 
 
 
