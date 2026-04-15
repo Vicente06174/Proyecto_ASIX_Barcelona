@@ -62,7 +62,8 @@ RACK 2 (más abajo):
 1.- Switch Cisco de 24 (Distribuidor Edificio 1):
 
 Puertos:
-Recepción: Puerto 1 (Configurado a VLAN 20)
+Recepción: Puerto 1 (Configurado a VLAN 20)  
+
 Gerencia: Puerto 4 (Configurado a VLAN 10)
 Administración: Puerto 5 (Configurado a VLAN 10)
 SAT: Puertos 8 i 9 (Configurados a VLAN 40)
