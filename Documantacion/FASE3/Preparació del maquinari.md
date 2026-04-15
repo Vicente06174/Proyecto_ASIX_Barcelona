@@ -64,11 +64,16 @@ RACK 2 (más abajo):
 Puertos:
 Recepción: Puerto 1 (Configurado a VLAN 20)  
 
-Gerencia: Puerto 4 (Configurado a VLAN 10)
-Administración: Puerto 5 (Configurado a VLAN 10)
-SAT: Puertos 8 i 9 (Configurados a VLAN 40)
-CPD: Puertos 12-20 (Configurados a VLAN 100)
-Connexión con el distribuidor de campus: Puerto 24 (Mode Trunk)
+Gerencia: Puerto 4 (Configurado a VLAN 10)  
+
+Administración: Puerto 5 (Configurado a VLAN 10)  
+
+SAT: Puertos 8 i 9 (Configurados a VLAN 40)  
+
+CPD: Puertos 12-20 (Configurados a VLAN 100)  
+
+Connexión con el distribuidor de campus: Puerto 24 (Mode Trunk)  
+
 
 2.- Patch Panel
 Puertos:
@@ -80,24 +85,32 @@ Puertos:
 1.- Switch TP-Link de 16/24 (Distribuidor Edificio 2):
 
 Puertos: 
-Sala vigilancia: Puerto 1 (Configurado a VLAN 50)
-Departamento comercial: Puerto 3 (Configurado a VLAN 20)
-Producció: Puerto 6 (Configurado a VLAN 30)
-Magatzem:
- Encarregat operacions: Puerto 9 (Configurado a VLAN 30)
- Administratiu: Puerto 10 (Configurado a VLAN 30)
+Sala vigilancia: Puerto 1 (Configurado a VLAN 50)  
+
+Departamento comercial: Puerto 3 (Configurado a VLAN 20)  
+
+Producción: Puerto 6 (Configurado a VLAN 30)  
+
+Almacenamiento: Encargado de operaciones: Puerto 9 (Configurado a VLAN 30) y  Administrativo: Puerto 10 (Configurado a VLAN 30)  
+ 
 Connexión con el distribuidor de campus: Puerto 16 (Mode Trunk)
 
 
 2.- Patch Panel
 Puertos:
-Usaremos los mismos números que en el switch
+Usaremos los mismos números que en el switch  
+
 Switch TP-Link de 8 (Distribuidor de campus):
-Connexión con el distribuidor Edificio 1: Port 1 (Mode Trunk)
-Connexión con el distribuidor Edificio 2: Port 3 (Mode Trunk)
-Connexión con Router Mikrotik: Puerto 8 (Mode Trunk)
+Connexión con el distribuidor Edificio 1: Port 1 (Mode Trunk)  
+
+Connexión con el distribuidor Edificio 2: Port 3 (Mode Trunk)  
+
+Connexión con Router Mikrotik: Puerto 8 (Mode Trunk)  
+
+
  Router Mikrotik:
-SNAT (tràfic d'eixida): Puerto 1 (WAN)
+SNAT (tràfic d'eixida): Puerto 1 (WAN)  
+
 Troncal y cortafuegos entre VLANs: Puerto 2 (LAN)
 
 
@@ -110,11 +123,17 @@ El SAI es de tipo Online (doble conversión), lo que proporciona suministro elé
 **Configuración del SAI (conexión USB)**
 
 El sistema se ha configurado mediante conexión USB directa a un servidor de gestión.
-Se utiliza el software NUT (Network UPS Tools) para:
-Monitorizar el estado del SAI (batería, carga, eventos)
-Detectar cortes eléctricos
-Ejecutar apagados automáticos
-Enviar órdenes al resto de servidores por red
+
+Se utiliza el software NUT (Network UPS Tools) para:  
+
+Monitorizar el estado del SAI (batería, carga, eventos)  
+
+Detectar cortes eléctricos  
+
+Ejecutar apagados automáticos  
+
+Enviar órdenes al resto de servidores por red  
+
 
 ## Clasificación de servidores según importancia
 
@@ -124,11 +143,16 @@ Se han definido dos niveles de prioridad basados en la función de cada servidor
 Son los sistemas que deben mantenerse activos el mayor tiempo posible:
 
 - SERVIDOR FÍSICO 3: Almacenamiento Centralizado (SAN)
-VM 5: Cabina de discos (SAN)
-VM 6: Datos (DFS)
+  
+VM 5: Cabina de discos (SAN)  
+
+VM 6: Datos (DFS)  
+
 
 - SERVIDOR FÍSICO 2: Aplicaciones y Backup
+  
 VM 3: BDC (Controlador de dominio secundario)
+
 VM 4: Aplicaciones y backup
 
 Estos servidores contienen los datos y servicios críticos de la empresa, por lo que deben apagarse en último lugar.
@@ -137,46 +161,48 @@ Estos servidores contienen los datos y servicios críticos de la empresa, por lo
 ### Servidores secundarios (Media prioridad)
 
 - SERVIDOR FÍSICO 1: Gestión de Identidad y Red
-VM 1: Servidor empresarial (PDC)
-VM 2: Monitorización (Zabbix)
+  
+VM 1: Servidor empresarial (PDC)  
+
+VM 2: Monitorización (Zabbix)  
+
 
 Aunque incluye servicios importantes, se ha considerado de menor prioridad para permitir la correcta parada del resto de sistemas.
 
 
 ### Equipos cliente (Baja prioridad)
-Ordenadores de usuario
-Puestos de trabajo
+Ordenadores de usuario y puestos de trabajo.
+
 Son los primeros en apagarse, ya que no son críticos para la integridad del sistema.
 
 ## Configuración del apagado ante corte eléctrico
-El sistema sigue un apagado escalonado controlado por el servidor con NUT:
-Secuencia de actuación
-Detección del corte eléctrico por el SAI
-Espera de seguridad (2–3 minutos) para evitar microcortes
+El sistema sigue un apagado escalonado controlado por el servidor con NUT:  
 
-- Fase 1: Apagado de clientes
-Apagado inmediato de equipos cliente
-Objetivo: reducir consumo rápidamente
+- Secuencia de actuación
+  
+- Detección del corte eléctrico por el SAI
+  
+- Espera de seguridad (2–3 minutos) para evitar microcortes.
+  
 
-- Fase 2: Servidores secundarios
+**Fase 1: Apagado de clientes**
+Apagado inmediato de equipos cliente  .
+
+Objetivo: reducir consumo rápidamente.
+
+**Fase 2: Servidores secundarios**
 SERVIDOR FÍSICO 1 (PDC + Zabbix)
 Apagado cuando: Batería al ~50% o tras 10 minutos
 
-- Fase 3: Servidores críticos
-SERVIDOR FÍSICO 2 (Apps + Backup)
-SERVIDOR FÍSICO 3 (SAN + DFS)
-Apagado cuando:
-Batería al 10–20%
+**Fase 3: Servidores críticos**
+SERVIDOR FÍSICO 2 (Apps + Backup)  
 
-- Fase 4: Servidor de gestión
-Último en apagarse
-Garantiza que todas las órdenes se ejecuten correctamente
+SERVIDOR FÍSICO 3 (SAN + DFS)  
 
+Apagado cuando: Batería al 10–20%.
 
-
-
-
-
+**Fase 4: Servidor de gestión**
+Último en apagarse. Garantiza que todas las órdenes se ejecuten correctamente
 
 
 
