@@ -192,97 +192,26 @@ Apagado cuando: Batería al 10–20%.
 
 ---
 
-# Plan de recuperación frente a incidencias
-
-El objetivo de este plan es prevenir y minimizar el impacto de incidencias que puedan afectar a los servidores, equipos de red (Mikrotik) y equipos cliente, garantizando la continuidad del servicio.
-
-**Protección contra incendios**
-Se implementan medidas para proteger la infraestructura ante incendios:
-
-**Medidas preventivas**
-- Instalación de detectores ópticos de humo en la sala de servidores
-  
-- Integración con el sistema de monitorización
-  
-- Notificación automática al responsable
-  
-
-**Actuación**
-- Uso de extintores de CO₂ o agente limpio
-- Intervención manual en caso de incidente
-
-**Seguridad física**
-El acceso a la zona donde se ubican los servidores y equipos de red está restringido mediante un sistema de control de acceso.
-
-**Medidas implementadas:**
--Acceso mediante tarjetas RFID  
-
--Cerradura electrónica controlada  
-
--Registro de accesos (entrada/salida del personal autorizado)  
-
--Ubicación en una zona separada de los puestos de trabajo  
-
-Este sistema permite limitar el acceso únicamente al personal autorizado, evitando manipulaciones indebidas de los servidores o del equipo de red (Mikrotik).
-
-
-**Copias de seguridad**
-Con el objetivo de prevenir la pérdida de información y garantizar la continuidad del servicio, se establecen las siguientes medidas de copias de seguridad:
-
-**Medidas preventivas**
-- Se realizan copias de seguridad automáticas de todas las máquinas virtuales y servidores.
-  
-- Se mantiene más de una copia de los datos para evitar pérdidas por fallos.
-  
-- Las copias se almacenan en diferentes soportes (almacenamiento en red y externo).
-  
-- Se dispone de al menos una copia fuera de la empresa para prevenir desastres físicos.
-
-  
-**Sistema de copias**
-- Posibilidad de recuperación completa o parcial (archivos, máquinas virtuales).
-  
-- Monitorización del estado de las copias y notificación de errores.
-
-  
-**Planificación**
-- Copias incrementales diarias de lunes a viernes.
-  
-- Copias completas durante el fin de semana.
-  
-  
-**Almacenamiento**
-- Copia local en NAS para recuperación rápida.
-  
-- Copia externa almacenada fuera de la empresa (disco externo o cintas).
-
-
-**Verificación**
-- Revisión periódica del estado de las copias.
-  
-- Pruebas de restauración para comprobar su correcto funcionamiento.
-
----
-
-# Otras medidas preventivas
+# Plan de prevención frente a incidencias
 
 **Fallo de hardware (servidores)**
-- Uso de RAID
-- Monitorización del estado de discos
+- Uso de RAID: Implementar niveles adecuados según criticidad: RAID 1 para redundancia básica; RAID 5/6 para equilibrio entre rendimiento y tolerancia a fallos; RAID 10 para sistemas críticos.
+- Verificación periódica del estado del RAID (rebuilds, inconsistencias).
+- Monitorización del estado de discos.
 
 **Fallo de red (Mikrotik)**
-- Copia de seguridad de la configuración
-- Sustitución rápida del equipo
-- Monitorización de red
+- Copia de seguridad de la configuración: Backups automáticos programados, almacenamiento externo seguro (NAS o nube), versionado de configuraciones.
+- Sustitución rápida del equipo: Disponer de un equipo Mikrotik de respaldo preconfigurado, documentación clara del proceso de reemplazo, pruebas periódicas de recuperación.
+- Monitorización de red: Uso de herramientas como SNMP, NetFlow o Zabbix, alertas en tiempo real ante caídas o saturación, control de ancho de banda y latencias.
 
   
 **Fallo eléctrico**
-- Uso de SAI Online redundante
-- Apagado controlado de sistemas según prioridad
+- Uso de SAI Online redundante: Dimensionamiento adecuado según consumo,c onfiguración en alta disponibilidad, monitorización del estado de baterías.
+- Apagado controlado de sistemas según prioridad: Scripts automáticos de apagado por prioridad: Sistemas no críticos, Servicios secundarios, Sistemas críticos.
 
 **Fallo de equipos cliente**
-- Sustitución rápida
-- Configuración centralizada
+- Sustitución rápida: Stock mínimo de equipos de reemplazo, equipos preconfigurados listos para uso inmediato, procedimiento estándar de cambio.
+- Configuración centralizada:Uso de Active Directory o gestión MDM, perfiles de usuario centralizados, aplicaciones desplegadas automáticamente.
 
 
 
