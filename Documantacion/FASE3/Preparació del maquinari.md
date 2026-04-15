@@ -2,30 +2,18 @@
 
 **MATERIAL DISPONIBLE**
 
-- 2 patch panels 
-
+- 2 patch panels
 - 1 MikroTik que hace de servidor de comunicaciones con el exterior
-
 - 1 switch Cisco 1U configurable que es el switch del edificio 1
-
 - 1 switch TP-Link 1U configurable que es el switch del edificio 2
-
 - 1 switch TP-Link configurable de 8 puertos no enrackable que es el switch de campus
-
 - 1 switch 1U no configurable
-
 - 3 puntos de acceso sin hilos 
-
 - 3 PC Dell que harán de servidores de la sede 
-
 - 4 PC que hacen de clientes de la red  
-
 - 5 monitores,5 teclados y 5 ratones
-
 - 1 SAI
-
 - 9 Adaptadores (3 x ordenador)
-
 - Cables de red
 
 
