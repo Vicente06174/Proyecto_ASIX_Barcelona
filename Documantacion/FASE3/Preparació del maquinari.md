@@ -33,13 +33,12 @@
 
 **Campus:**
 
-Switch Distribucion: 
+Switch Distribución: 
 
--1 switch TP-Link configurable de 8 ports no enrackable
+-1 switch TP-Link configurable de 8 puertos no enrackable
 
 
 RACK 1 (más arriba):
-
 -1 Patch Panel
 
 -1 switch Cisco
@@ -68,7 +67,7 @@ Gerencia: Puerto 4 (Configurado a VLAN 10)
 
 Administración: Puerto 5 (Configurado a VLAN 10)  
 
-SAT: Puertos 8 i 9 (Configurados a VLAN 40)  
+SAT: Puertos 8 y 9 (Configurados a VLAN 40)  
 
 CPD: Puertos 12-20 (Configurados a VLAN 100)  
 
@@ -204,6 +203,51 @@ Apagado cuando: Batería al 10–20%.
 **Fase 4: Servidor de gestión**
 Último en apagarse. Garantiza que todas las órdenes se ejecuten correctamente
 
-
+---
 
 # Plan de recuperación frente a incidencias
+
+El objetivo de este plan es prevenir y minimizar el impacto de incidencias que puedan afectar a los servidores, equipos de red (Mikrotik) y equipos cliente, garantizando la continuidad del servicio.
+
+Protección contra incendios
+Se implementan medidas para proteger la infraestructura ante incendios:
+Medidas preventivas
+Instalación de detectores ópticos de humo en la sala de servidores
+Integración con el sistema de monitorización
+Notificación automática al responsable
+Actuación
+Uso de extintores de CO₂ o agente limpio
+Intervención manual en caso de incidente
+
+Seguridad física
+El acceso a la zona donde se ubican los servidores y equipos de red está restringido mediante un sistema de control de acceso.
+Medidas implementadas:
+Acceso mediante tarjetas RFID
+Cerradura electrónica controlada
+Registro de accesos (entrada/salida del personal autorizado)
+Ubicación en una zona separada de los puestos de trabajo
+Este sistema permite limitar el acceso únicamente al personal autorizado, evitando manipulaciones indebidas de los servidores o del equipo de red (Mikrotik)
+
+Copias de seguridad
+Con el objetivo de prevenir la pérdida de información y garantizar la continuidad del servicio, se establecen las siguientes medidas de copias de seguridad:
+Medidas preventivas
+Se realizan copias de seguridad automáticas de todas las máquinas virtuales y servidores.
+Se mantiene más de una copia de los datos para evitar pérdidas por fallos.
+Las copias se almacenan en diferentes soportes (almacenamiento en red y externo).
+Se dispone de al menos una copia fuera de la empresa para prevenir desastres físicos.
+Sistema de copias
+Posibilidad de recuperación completa o parcial (archivos, máquinas virtuales).
+Monitorización del estado de las copias y notificación de errores.
+Planificación
+
+Copias incrementales diarias de lunes a viernes.
+Copias completas durante el fin de semana.
+Almacenamiento
+Copia local en NAS para recuperación rápida.
+Copia externa almacenada fuera de la empresa (disco externo o cintas).
+
+
+Verificación
+Revisión periódica del estado de las copias.
+Pruebas de restauración para comprobar su correcto funcionamiento.
+
