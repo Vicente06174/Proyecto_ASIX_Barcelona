@@ -60,11 +60,11 @@ Se han definido dos niveles de prioridad basados en la función de cada servidor
 ### Servidores críticos (Alta prioridad)
 Son los sistemas que deben mantenerse activos el mayor tiempo posible:
 
-SERVIDOR FÍSICO 3: Almacenamiento Centralizado (SAN)
+- SERVIDOR FÍSICO 3: Almacenamiento Centralizado (SAN)
 VM 5: Cabina de discos (SAN)
 VM 6: Datos (DFS)
 
-SERVIDOR FÍSICO 2: Aplicaciones y Backup
+- SERVIDOR FÍSICO 2: Aplicaciones y Backup
 VM 3: BDC (Controlador de dominio secundario)
 VM 4: Aplicaciones y backup
 
@@ -97,9 +97,7 @@ Objetivo: reducir consumo rápidamente
 
 - Fase 2: Servidores secundarios
 SERVIDOR FÍSICO 1 (PDC + Zabbix)
-Apagado cuando:
-Batería al ~50%
-o tras 10 minutos
+Apagado cuando: Batería al ~50% o tras 10 minutos
 
 - Fase 3: Servidores críticos
 SERVIDOR FÍSICO 2 (Apps + Backup)
