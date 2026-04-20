@@ -46,7 +46,7 @@ RACK 2 (más abajo):
 
 Puertos:  
 
-Recepción: Puerto 1 (Configurado a VLAN 20)  
+Recepción: Puerto 2 (Configurado a VLAN 20)  
 
 Gerencia: Puerto 4 (Configurado a VLAN 10)  
 
@@ -54,7 +54,7 @@ Administración: Puerto 5 (Configurado a VLAN 10)
 
 SAT: Puertos 8 y 9 (Configurados a VLAN 40)  
 
-CPD: Puertos 12-20 (Configurados a VLAN 100)  
+CPD: Puertos 12-24 (Configurados a VLAN 100)  
 
 Connexión con el distribuidor de campus: Puerto 24 (Mode Trunk)  
 
