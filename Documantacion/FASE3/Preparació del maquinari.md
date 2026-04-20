@@ -215,14 +215,15 @@ Apagado cuando: Batería al 10–20%.
 
 
 # ESQUEMA DISEÑO CPD
+---
 
 A continuación se muestra el esquema general del diseño del CPD, incluyendo la distribución de racks, switches, servidores y el SAI, entre otros.
 
-## 📷 Esquema visual del CPD
+##  Esquema visual del CPD
 
 ![Esquema CPD](https://drive.google.com/uc?export=view&id=12cYCpXAcUTs-oKG1dgZq2uS50IHCZVi0)
 
-## 📝 Explicación del esquema
+##  Explicación del esquema
 
 El diagrama representa la estructura física del CPD, mostrando:
 
@@ -232,7 +233,7 @@ El diagrama representa la estructura física del CPD, mostrando:
 - **Interconexiones Trunk**: Enlaces principales entre edificios y el router.  
 - **Distribución por VLAN**: Cada área de la empresa está segmentada para mejorar seguridad y rendimiento.
 
-## 🗂️ Leyenda del esquema
+##  Leyenda del esquema
 
 | Elemento | Descripción |
 |---------|-------------|
@@ -245,6 +246,5 @@ El diagrama representa la estructura física del CPD, mostrando:
 | **Trunk** | Enlace de transporte de VLANs |
 | **VLAN X** | Segmentación lógica de red |
 
----
 
 
