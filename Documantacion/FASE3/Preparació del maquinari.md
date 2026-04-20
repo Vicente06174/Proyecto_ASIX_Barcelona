@@ -56,7 +56,7 @@ SAT: Puertos 8 y 9 (Configurados a VLAN 40)
 
 CPD: Puertos 12-24 (Configurados a VLAN 100)  
 
-Connexión con el distribuidor de campus: Puerto 24 (Mode Trunk)  
+Connexión con el distribuidor de campus: Puerto 1 (Mode Trunk)  
 
 
 2.- Patch Panel
