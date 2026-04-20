@@ -214,6 +214,37 @@ Apagado cuando: Batería al 10–20%.
 - Configuración centralizada:Uso de Active Directory o gestión MDM, perfiles de usuario centralizados, aplicaciones desplegadas automáticamente.
 
 
+# ESQUEMA DISEÑO CPD
 
+A continuación se muestra el esquema general del diseño del CPD, incluyendo la distribución de racks, switches, servidores y el SAI, entre otros.
+
+## 📷 Esquema visual del CPD
+
+![Esquema CPD](https://drive.google.com/uc?export=view&id=12cYCpXAcUTs-oKG1dgZq2uS50IHCZVi0)
+
+## 📝 Explicación del esquema
+
+El diagrama representa la estructura física del CPD, mostrando:
+
+- **RACK 1**: Patch panel, switch Cisco y router MikroTik como punto principal de comunicaciones.  
+- **RACK 2**: Patch panel, switch TP-Link, servidores Dell y el SAI que garantiza continuidad eléctrica.  
+- **Switch de Campus**: Une los edificios y distribuye la red troncal.  
+- **Interconexiones Trunk**: Enlaces principales entre edificios y el router.  
+- **Distribución por VLAN**: Cada área de la empresa está segmentada para mejorar seguridad y rendimiento.
+
+## 🗂️ Leyenda del esquema
+
+| Elemento | Descripción |
+|---------|-------------|
+| **PP** | Patch Panel |
+| **SW Cisco** | Switch principal del Edificio 1 |
+| **SW TP-Link** | Switch del Edificio 2 y Campus |
+| **MikroTik** | Router y firewall entre VLANs |
+| **Srv Dell** | Servidores físicos con máquinas virtuales |
+| **SAI** | Sistema de alimentación ininterrumpida |
+| **Trunk** | Enlace de transporte de VLANs |
+| **VLAN X** | Segmentación lógica de red |
+
+---
 
 
