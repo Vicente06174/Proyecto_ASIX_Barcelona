@@ -19,8 +19,8 @@ Se crea un bucket en Amazon S3 que actuará como contenedor para los archivos de
 Durante la configuración, se asigna un nombre único al bucket y se mantiene la configuración por defecto en cuanto a región y tipo de uso.
 
 Además, se desactiva el bloqueo de acceso público, permitiendo que los archivos puedan ser accesibles desde Internet, lo cual es necesario para el funcionamiento del sitio web estático.
+![](https://drive.google.com/uc?export=view&id=1kThuAcyMYj6_E0gtgASxpVEkVO3lV2ue)
 
-![](https://drive.google.com/file/d/1kThuAcyMYj6_E0gtgASxpVEkVO3lV2ue/view?usp=sharing)  
 **Bucket creado**
 
 ![](https://drive.google.com/file/d/1uFgzEb4aCglF7iwc0LUuhOz2Fd-FuaqW/view?usp=sharing)
