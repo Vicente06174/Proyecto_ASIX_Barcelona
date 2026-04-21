@@ -45,8 +45,7 @@ Esta política permite que cualquier usuario pueda acceder a los archivos median
 
 **Cargar Archivos y carpetas** 
 
-![](https://drive.google.com/uc?export=view&id=1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs)
-
+![](https://drive.google.com/uc?export=view&id=1trxUz0SE8ZBbiGrYQJ3tPvSzbnR-pso5)
 Se suben al bucket los archivos necesarios para el sitio web:  
 \- index.html  
 \- error.html  
@@ -55,8 +54,7 @@ Estos archivos constituyen el contenido del sitio web estático.
 
 **Comprobación del funcionamiento**
 
-![](https://drive.google.com/uc?export=view&id=1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs)
-
+![](https://drive.google.com/file/d/1rpmQhGTEO5oUTpb4ueyYBB74IIgCnj6b)
 Se accede a la URL generada por Amazon S3 para comprobar el funcionamiento del sitio web.
 
 Se verifica que la página principal (index.html) se muestra correctamente y que las imágenes se cargan sin problemas.
