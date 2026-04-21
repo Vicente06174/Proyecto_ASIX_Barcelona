@@ -6,8 +6,8 @@ En primer lugar, se accede a la consola de Amazon Web Services (AWS) a través d
 
 **Entrar en S3:**
 
-![](https://drive.google.com/file/d/1Q7_DIIF4VCxJFGxoTeoze2a-qQkv-6-i/view?usp=sharing)
-   
+![](https://drive.google.com/uc?export=view&id=1Q7_DIIF4VCxJFGxoTeoze2a-qQkv-6-i)
+
 Una vez dentro de la consola de AWS, se accede al servicio Amazon S3, que permite almacenar y gestionar archivos en la nube.
 
 **Crear Bucket**
