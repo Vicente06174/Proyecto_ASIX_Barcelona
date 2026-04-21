@@ -28,8 +28,7 @@ Una vez creado el bucket, se verifica que aparece correctamente en la lista de b
 
 **Activar Web Estática**
 
-![](https://drive.google.com/file/d/1uFgzEb4aCglF7iwc0LUuhOz2Fd-FuaqW/view?usp=sharing)
-
+![](https://drive.google.com/uc?export=view&id=1uFgzEb4aCglF7iwc0LUuhOz2Fd-FuaqW)
 Se activa la funcionalidad de alojamiento web estático dentro del bucket.  
 Se configura:  
 \- index.html como página principal  
@@ -38,7 +37,7 @@ Esto permite que el bucket funcione como un servidor web accesible desde Interne
 
 **Añadir política de bucket**
 
-![](https://drive.google.com/file/d/1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs/view?usp=sharing)
+![](https://drive.google.com/uc?export=view&id=1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs)
 
 Se añade una política de bucket en formato JSON para permitir el acceso público de lectura a los archivos almacenados.
 
@@ -46,7 +45,7 @@ Esta política permite que cualquier usuario pueda acceder a los archivos median
 
 **Cargar Archivos y carpetas** 
 
-![](https://drive.google.com/file/d/1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs/view?usp=sharing)]
+![](https://drive.google.com/uc?export=view&id=1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs)
 
 Se suben al bucket los archivos necesarios para el sitio web:  
 \- index.html  
@@ -56,7 +55,7 @@ Estos archivos constituyen el contenido del sitio web estático.
 
 **Comprobación del funcionamiento**
 
-![](https://drive.google.com/file/d/1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs/view?usp=sharing)
+![](https://drive.google.com/uc?export=view&id=1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs)
 
 Se accede a la URL generada por Amazon S3 para comprobar el funcionamiento del sitio web.
 
@@ -64,7 +63,8 @@ Se verifica que la página principal (index.html) se muestra correctamente y que
 
 **Prueba de error**
 
-![](https://drive.google.com/file/d/17YsR-O7GppZ7_RsI8H-EM1yEHSW7ZGq2/view?usp=sharing) 
+![](https://drive.google.com/uc?export=view&id=17YsR-O7GppZ7_RsI8H-EM1yEHSW7ZGq2)
+
 Se realiza una prueba accediendo a una ruta inexistente para verificar el funcionamiento de la página de error.
 
 El sistema muestra correctamente el archivo error.html configurado previamente.
