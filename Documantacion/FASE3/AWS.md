@@ -54,7 +54,8 @@ Estos archivos constituyen el contenido del sitio web estático.
 
 **Comprobación del funcionamiento**
 
-![](https://drive.google.com/file/d/1rpmQhGTEO5oUTpb4ueyYBB74IIgCnj6b)
+![](https://drive.google.com/uc?export=view&id=1rpmQhGTEO5oUTpb4ueyYBB74IIgCnj6b)
+
 Se accede a la URL generada por Amazon S3 para comprobar el funcionamiento del sitio web.
 
 Se verifica que la página principal (index.html) se muestra correctamente y que las imágenes se cargan sin problemas.
