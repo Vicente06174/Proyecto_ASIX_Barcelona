@@ -6,16 +6,16 @@ En primer lugar, se accede a la consola de Amazon Web Services (AWS) a través d
 
 **Entrar en S3:**
 
-**![][image2]**  
+![](https://drive.google.com/file/d/1Q7_DIIF4VCxJFGxoTeoze2a-qQkv-6-i/view?usp=sharing)
    
 Una vez dentro de la consola de AWS, se accede al servicio Amazon S3, que permite almacenar y gestionar archivos en la nube.
 
 **Crear Bucket**
 
-**![][image3]**  
+![](https://drive.google.com/file/d/1dcSu8HuEE_DxDyo6JSOpx1LdZMfr3MXV/view?usp=sharing)
  
 
-![][image4]
+![](https://drive.google.com/file/d/10WveovFA_TFcZS89hlL0bz7mdC2NsJ_h/view?usp=sharing)
 
 Se crea un bucket en Amazon S3 que actuará como contenedor para los archivos del sitio web.
 
@@ -23,16 +23,17 @@ Durante la configuración, se asigna un nombre único al bucket y se mantiene la
 
 Además, se desactiva el bloqueo de acceso público, permitiendo que los archivos puedan ser accesibles desde Internet, lo cual es necesario para el funcionamiento del sitio web estático.
 
-![][image5]  
+![](https://drive.google.com/file/d/1kThuAcyMYj6_E0gtgASxpVEkVO3lV2ue/view?usp=sharing)  
 **Bucket creado**
 
-![][image6]
+![](https://drive.google.com/file/d/1uFgzEb4aCglF7iwc0LUuhOz2Fd-FuaqW/view?usp=sharing)
 
 Una vez creado el bucket, se verifica que aparece correctamente en la lista de buckets de Amazon S3, confirmando su correcta creación.
 
 **Activar Web Estática**
 
-**![][image7]**  
+![](https://drive.google.com/file/d/1uFgzEb4aCglF7iwc0LUuhOz2Fd-FuaqW/view?usp=sharing)
+
 Se activa la funcionalidad de alojamiento web estático dentro del bucket.  
 Se configura:  
 \- index.html como página principal  
@@ -41,7 +42,7 @@ Esto permite que el bucket funcione como un servidor web accesible desde Interne
 
 **Añadir política de bucket**
 
-**![][image8]**
+![](https://drive.google.com/file/d/1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs/view?usp=sharing)
 
 Se añade una política de bucket en formato JSON para permitir el acceso público de lectura a los archivos almacenados.
 
@@ -49,7 +50,7 @@ Esta política permite que cualquier usuario pueda acceder a los archivos median
 
 **Cargar Archivos y carpetas** 
 
-**![][image9]**
+![](https://drive.google.com/file/d/1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs/view?usp=sharing)]
 
 Se suben al bucket los archivos necesarios para el sitio web:  
 \- index.html  
@@ -59,7 +60,7 @@ Estos archivos constituyen el contenido del sitio web estático.
 
 **Comprobación del funcionamiento**
 
-**![][image10]**
+![](https://drive.google.com/file/d/1xF4wQ5xVCy99u9xkpYtgA-DV0vm_JDAs/view?usp=sharing)
 
 Se accede a la URL generada por Amazon S3 para comprobar el funcionamiento del sitio web.
 
@@ -67,7 +68,7 @@ Se verifica que la página principal (index.html) se muestra correctamente y que
 
 **Prueba de error**
 
-**![][image11]**  
+![](https://drive.google.com/file/d/17YsR-O7GppZ7_RsI8H-EM1yEHSW7ZGq2/view?usp=sharing) 
 Se realiza una prueba accediendo a una ruta inexistente para verificar el funcionamiento de la página de error.
 
 El sistema muestra correctamente el archivo error.html configurado previamente.
