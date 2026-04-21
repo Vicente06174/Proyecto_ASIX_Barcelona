@@ -1,6 +1,6 @@
 **Acceder a AWS:**
 
-![](https://drive.google.com/file/d/18VLUZHKZ5Jn1vY8R37AtvMJKNXXpCqaj/view?usp=sharing)
+![](https://drive.google.com/uc?export=view&id=18VLUZHKZ5Jn1vY8R37AtvMJKNXXpCqaj))
 
 En primer lugar, se accede a la consola de Amazon Web Services (AWS) a través del entorno AWS Academy Learner Lab, utilizando el enlace proporcionado para iniciar sesión en la plataforma.
 
