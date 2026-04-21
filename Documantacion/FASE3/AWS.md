@@ -45,7 +45,7 @@ Esta política permite que cualquier usuario pueda acceder a los archivos median
 
 **Cargar Archivos y carpetas** 
 
-![](https://drive.google.com/file/d/1jyX0CJhN53tPExDD1QVSXD9T7_bE3ORh)
+![](https://drive.google.com/uc?export=view&id=1jyX0CJhN53tPExDD1QVSXD9T7_bE3ORh)
 Se suben al bucket los archivos necesarios para el sitio web:  
 \- index.html  
 \- error.html  
