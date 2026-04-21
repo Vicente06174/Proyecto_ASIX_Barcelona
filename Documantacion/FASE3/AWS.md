@@ -23,8 +23,7 @@ Además, se desactiva el bloqueo de acceso público, permitiendo que los archivo
 
 **Bucket creado**
 
-![](https://drive.google.com/file/d/1uFgzEb4aCglF7iwc0LUuhOz2Fd-FuaqW/view?usp=sharing)
-
+![](https://drive.google.com/uc?export=view&id=1uFgzEb4aCglF7iwc0LUuhOz2Fd-FuaqW)
 Una vez creado el bucket, se verifica que aparece correctamente en la lista de buckets de Amazon S3, confirmando su correcta creación.
 
 **Activar Web Estática**
