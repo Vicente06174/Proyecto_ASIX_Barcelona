@@ -12,11 +12,9 @@ Una vez dentro de la consola de AWS, se accede al servicio Amazon S3, que permit
 
 **Crear Bucket**
 
-![](https://drive.google.com/file/d/1dcSu8HuEE_DxDyo6JSOpx1LdZMfr3MXV/view?usp=sharing)
- 
+![](https://drive.google.com/uc?export=view&id=1dcSu8HuEE_DxDyo6JSOpx1LdZMfr3MXV) 
 
-![](https://drive.google.com/file/d/10WveovFA_TFcZS89hlL0bz7mdC2NsJ_h/view?usp=sharing)
-
+![](https://drive.google.com/uc?export=view&id=10WveovFA_TFcZS89hlL0bz7mdC2NsJ_h)
 Se crea un bucket en Amazon S3 que actuará como contenedor para los archivos del sitio web.
 
 Durante la configuración, se asigna un nombre único al bucket y se mantiene la configuración por defecto en cuanto a región y tipo de uso.
