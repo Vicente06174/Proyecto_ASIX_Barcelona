@@ -28,7 +28,7 @@ Una vez creado el bucket, se verifica que aparece correctamente en la lista de b
 
 **Activar Web Estática**
 
-![](https://drive.google.com/uc?export=view&id=1uFgzEb4aCglF7iwc0LUuhOz2Fd-FuaqW)
+![](https://drive.google.com/uc?export=view&id=1trxUz0SE8ZBbiGrYQJ3tPvSzbnR-pso5)
 Se activa la funcionalidad de alojamiento web estático dentro del bucket.  
 Se configura:  
 \- index.html como página principal  
