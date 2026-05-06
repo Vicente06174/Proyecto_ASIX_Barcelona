@@ -1,17 +1,15 @@
 Import-Module ActiveDirectory
 $ErrorActionPreference = "Stop"
 
-# CONFIGURACIÓN
+
 $Dominio = "barcelona.lan"
 $BaseOU = "OU=Barcelona,DC=barcelona,DC=lan"
 $CSVPath = "$PSScriptRoot\usuaris.csv"
 $PasswordPlano = "barcelona@1"
 $PasswordSegura = ConvertTo-SecureString $PasswordPlano -AsPlainText -Force
 
-# Grupo de jefes existente en tu AD
 $GrupoJefes = "GG Caps Departament"
 
-# Mapeo CSV -> OU y grupo real de AD
 $MapaDepartamentos = @{
     "Gerencia"       = @{ OU="Gerencia";        Grupo="GG_Seguridad_Gerencia" }
     "Administración" = @{ OU="Administrativo";  Grupo="GG_Seguridad_Administrativo" }
